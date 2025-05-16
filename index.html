@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bogo-container">
+    <h2>YAY! It's BOGO</h2>
+    <form id="bogoForm">
+   
+      <div class="offer-box active" data-price="10" data-units="1">
+        <input type="radio" name="offer" value="1" checked>
+        <div class="offer-content">
+          <div>
+            <strong>1 Unit</strong> <span class="discount">10% Off</span><br>
+            <small>Standard Price</small>
+          </div>
+          <div class="price">
+            $10.00 USD<br><s>$24.00 USD</s>
+          </div>
+        </div>
+      </div>
+ 
+ 
+      <div class="offer-box" data-price="18" data-units="2">
+        <input type="radio" name="offer" value="2">
+        <div class="offer-content">
+          <div>
+            <strong>2 Unit</strong> <span class="discount">20% Off</span>
+            <span class="tag">MOST POPULAR</span><br>
+          </div>
+          <div class="price">
+            $18.00 USD<br><s>$24.00 USD</s>
+          </div>
+        </div>
+        <div class="selectors">
+          <div>
+            #1 Size:
+            <select><option>S</option><option>M</option><option>L</option></select>
+            Colour:
+            <select id="color1">
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+          <div>
+            #2 Size:
+            <select><option>S</option><option>M</option><option>L</option></select>
+            Colour:
+            <select id="color2">
+              <option>Colour</option><option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+ 
+
+      <div class="offer-box" data-price="24" data-units="3">
+        <input type="radio" name="offer" value="3">
+        <div class="offer-content">
+          <div>
+            <strong>3 Unit</strong> <span class="discount">30% Off</span>
+          </div>
+          <div class="price">
+            $24.00 USD<br><s>$24.00 USD</s>
+          </div>
+        </div>
+      </div>
+ 
+      <p class="delivery">Free Delivery</p>
+      <p class="total">Total : $<span id="total">10.00</span> USD</p>
+      <button type="submit" class="add-btn">+ Add to Cart</button>
+    </form>
+  </div>
+ 
+
+<div id="popup-overlay" class="popup-overlay">
+  <div id="popup" class="popup">
+    <span id="popup-close" class="popup-close">&times;</span>
+    <p></p>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
